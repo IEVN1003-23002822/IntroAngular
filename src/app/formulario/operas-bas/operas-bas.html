@@ -1,0 +1,105 @@
+<!-- <p>operas-bas works!</p>
+<h2>suma</h2>
+<div class="col-md-6">
+    <div class="mb-3">
+        <form action="from-group pt-4">
+            <label for="num1">Numero1</label>
+            <input type="text" name="num1" class="form-control" id="num1" placeholder="ingresa el numeor 1" [(ngModel)]="num1">
+        </form>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="mb-3">
+        <form action="from-group pt-4">
+            <label for="num2">Numero2</label>
+            <input type="text" name="num2" class="form-control" id="num2" placeholder="ingresa el numeor 2" [(ngModel)]="num2">
+            <button type="button" class="btn btn-primary" (click)="sumar()">sumar</button>
+        </form>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <h2>resultado {{resultado}}</h2>
+</div>
+
+ <h2>multiplicar</h2>
+ <div class="col-md-6">
+    <div class="mb-3">
+        <form action="from-group pt-4">
+            <label for="num3">Numero3</label>
+            <input type="text" name="num3" class="form-control" id="num3" placeholder="ingresa el numeor 3" [(ngModel)]="num3">
+        </form>
+    </div>
+</div>
+
+<div class="multiplicar">
+    <div class="multiplicar1">
+        <form action="from-group pt-4">
+            <label for="num4">Numero4</label>
+            <input type="text" name="num4" class="form-control" id="num4" placeholder="ingresa el numeoro para multiplicar" [(ngModel)]="num4">
+            <button type="button" class="multiplicar" (click)="multiplicar()">multiplicar</button>
+        </form>
+    </div>
+</div>
+<div class="col-md-6">
+    <h2>resultado {{resultadoMultiplicacion}}</h2>
+</div>
+
+ <h2>restar</h2>
+  <div class="col-md-6">
+    <div class="mb-3">
+        <form action="from-group pt-4">
+            <label for="num5">Numero5</label>
+            <input type="text" name="num5" class="form-control" id="num5" placeholder="ingresa el numeor 5" [(ngModel)]="num5">
+        </form>
+    </div>
+</div>
+
+<div class="multiplicar">
+    <div class="multiplicar1">
+        <form action="from-group pt-4">
+            <label for="num6">Numero6</label>
+            <input type="text" name="num6" class="form-control" id="num6" placeholder="ingresa el numeoro para multiplicar" [(ngModel)]="num6">
+            <button type="button" class="restar" (click)="restar()">restar</button>
+        </form>
+    </div>
+</div>
+<div class="col-md-6">
+    <h2>restar {{resultadoResta}}</h2>
+</div>  -->
+
+
+<p>Elegir una operacion </p>
+<p>
+	sumar: <input [(ngModel)]="operacion" value="sumar" type="radio" name="operaciones"/><br />
+	restar: <input [(ngModel)]="operacion" value="restar" type="radio" name="operaciones" /><br />
+	multiplicar: <input [(ngModel)]="operacion" value="multiplicar" type="radio" name="operaciones" />
+</p>
+
+<div class="col-md-6">
+    <div class="mb-3">
+        <form action="radio">
+            <label for="Numero1">Numero1</label>
+            <input type="text" name="Numero1" class="form-control" id="Numero1" placeholder="ingresa el numeor 1" [(ngModel)]="Numero1">
+        </form>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="mb-3">
+        <form action="radio">
+            <label for="Numero2">Numero2</label>
+            <input type="text" name="Numero2" class="form-control" id="Numero2" placeholder="ingresa el numeor 2" [(ngModel)]="Numero2">
+            <button type="button" class="btn btn-primary" (click)="calcular()">calcular</button>
+        </form>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <h2>Resultado {{resultado}}</h2>
+</div>
+
+
+
+
