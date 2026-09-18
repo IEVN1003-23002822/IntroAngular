@@ -1,0 +1,19 @@
+<div>
+  <h2>Área</h2>
+
+  <p>
+    <label><input type="radio" name="figura" value="cuadrado" [(ngModel)]="figura"> Cuadrado</label><br>
+    <label><input type="radio" name="figura" value="triangulo" [(ngModel)]="figura"> Triángulo</label><br>
+    <label><input type="radio" name="figura" value="rectangulo" [(ngModel)]="figura"> Rectángulo</label><br>
+    <label><input type="radio" name="figura" value="poligono" [(ngModel)]="figura"> Polígono</label><br>
+    <label><input type="radio" name="figura" value="circulo" [(ngModel)]="figura"> Círculo</label>
+  </p>
+  <p>
+    Valor1: <input type="number" [(ngModel)]="Valor1"><br><br>
+    Valor2: <input type="number" [(ngModel)]="Valor2">
+  </p>
+
+  <button type="button" (click)="calcularArea()">Calcular</button>
+
+  <h3>Resultado: {{ Area }}</h3>
+</div>
