@@ -1,0 +1,11 @@
+<div>
+  <h2>Comprobador de Palíndromos</h2>
+  <label>Ingresa una palabra o frase:</label>
+  <input type="text" [(ngModel)]="palabra" placeholder="Escribe aquí...">
+  <button type="button" (click)="analizar()">Analizar</button>
+  <hr>
+  <h2>RESULTADO</h2>
+  <p>Resultado: {{ resultado }}</p>
+  <p>Vocales: {{ vocales }}</p>
+  <p>Consonantes: {{ consonantes }}</p>
+</div>

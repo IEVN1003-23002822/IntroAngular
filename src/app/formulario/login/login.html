@@ -1,0 +1,23 @@
+<div>
+  <h2>INICIO DE SESIÓN</h2>
+
+  <div>
+    <label>Usuario: </label>
+    <input type="text" [(ngModel)]="usuarioIngresado">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Contraseña: </label>
+    <input type="password" [(ngModel)]="contrasenaIngresada">
+  </div>
+
+  <br>
+
+  <button type="button" (click)="iniciarSesion()">Iniciar sesión</button>
+
+  <hr>
+
+  <p>{{ mensaje }}</p>
+</div>

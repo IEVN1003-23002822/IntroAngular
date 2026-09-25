@@ -1,0 +1,27 @@
+<div>
+  <h2>Puntos del triángulo</h2>
+
+  <h3>Punto A</h3>
+  <p>X: <input type="number" [(ngModel)]="x1"></p>
+  <p>Y: <input type="number" [(ngModel)]="y1"></p>
+
+  <h3>Punto B</h3>
+  <p>X: <input type="number" [(ngModel)]="x2"></p>
+  <p>Y: <input type="number" [(ngModel)]="y2"></p>
+
+  <h3>Punto C</h3>
+  <p>X: <input type="number" [(ngModel)]="x3"></p>
+  <p>Y: <input type="number" [(ngModel)]="y3"></p>
+
+  <button type="button" (click)="analizarPuntos()">Analizar puntos</button>
+
+  <hr>
+
+  <h2>RESULTADO</h2>
+  <p>Punto A: ({{ x1 }}, {{ y1 }})</p>
+  <p>Punto B: ({{ x2 }}, {{ y2 }})</p>
+  <p>Punto C: ({{ x3 }}, {{ y3 }})</p>
+
+  <p>{{ mensaje }}</p>
+  <p *ngIf="esTriangulo">Área: {{ area }} unidades cuadradas</p>
+</div>

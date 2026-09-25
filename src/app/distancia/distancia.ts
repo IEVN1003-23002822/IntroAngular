@@ -19,6 +19,9 @@ export class Distancia {
     let pX2 = Number(this.x2);
     let pY2 = Number(this.y2);
 
-    this.distancia = Math.sqrt(Math.pow(pX2-pX1, 2) + Math.pow(pY2-pY1, 2));
+    let dx = pX2 - pX1;
+    let dy = pY2 - pY1;
+
+    this.distancia = Math.sqrt(dx ** 2 + dy ** 2);
   }
 }
